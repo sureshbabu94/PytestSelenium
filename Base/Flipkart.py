@@ -1,5 +1,5 @@
 
-import time, unittest, HtmlTestRunner,sys, logging, html_test_report,pytest
+import time, unittest,sys, logging,pytest
 from Reader import WebReader
 from Base import Base
 from selenium import webdriver
@@ -48,4 +48,4 @@ def run_report():
 
 if __name__=='__main__':
      #unittest.main(testRunner=HtmlTestRunner.HTMLTestRunner(output="C:\\PythonProsjects\\Reports"))
-     unittest.main(testRunner=HtmlTestRunner.HtmlTestRunner(output="C:\\PythonProjects\\Reports"))
+     unittest.main()
