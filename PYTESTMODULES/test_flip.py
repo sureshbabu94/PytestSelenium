@@ -64,10 +64,10 @@ def test_fassured():
 def test_switching_window():
     #self.browser.execute_script("arguments[0].scrollIntoView",Base.prod1)
     #self.browser.execute_script("arguments[0].click",Base.prod1)
-    WebDriverWait(driver1, 10).until(EC.element_to_be_clickable((By.XPATH, WebReader.getlocator("prod"))))
+    WebDriverWait(driver1, 10).until(EC.element_to_be_clickable((By.XPATH, WebReader.getlocator("prod1"))))
     try:
         time.sleep(5)
-        driver1.find_element(By.XPATH,WebReader.getlocator("prod")).click()
+        driver1.find_element(By.XPATH,WebReader.getlocator("prod1")).click()
     except ElementClickInterceptedException:
         print("Click exception occured...")
     except:
