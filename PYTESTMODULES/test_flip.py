@@ -1,4 +1,4 @@
-import time, unittest, HtmlTestRunner,sys, logging, html_test_report,pytest,traceback
+import time, unittest,sys, logging,pytest,traceback
 from selenium import webdriver
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
