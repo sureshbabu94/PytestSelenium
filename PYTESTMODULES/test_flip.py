@@ -56,8 +56,9 @@ def test_fassured():
     #self.browser.execute_script('arguments[0].click', Base.fassured)
     wait = WebDriverWait(driver1,10)
     #wait.until(EC.element_to_be_clickable((By.XPATH,Base.fassure)))
-    driver1.execute_script('arguments[0].click', WebReader.getlocator("fassure"))
-    #self.browser.find_element(By.XPATH, Base.fassured).click()
+    #driver1.execute_script('arguments[0].click', WebReader.getlocator("fassure"))
+    driver1.find_element(By.XPATH, WebReader.getlocator("fassure")).click()
+    time.sleep(3)
     print("Fassured..............")
 
 
