@@ -1,7 +1,7 @@
 from jproperties import Properties
 #class
 configs = Properties()
-with open('C:/PythonProjects/webelements/web.properties', 'rb') as config_file:
+with open('./webelements/web.properties', 'rb') as config_file:
             configs.load(config_file)
 
 def geturl():
